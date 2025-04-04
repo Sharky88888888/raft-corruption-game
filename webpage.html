@@ -4,7 +4,68 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>The Ugly Game: Corruption Hunt</title>
-  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #111;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
+
+    #game-container, #choice-container, #start-container, #task-complete-container, #achievements-container {
+      max-width: 600px;
+      margin: 20px auto;
+      padding: 20px;
+      background: #222;
+      border-radius: 10px;
+      display: none;
+    }
+
+    #start-container {
+      display: block;
+    }
+
+    button {
+      background: #444;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      margin: 8px;
+      cursor: pointer;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+
+    button:hover {
+      background: #666;
+    }
+
+    #transition-screen {
+      font-style: italic;
+      margin: 20px 0;
+      font-size: 20px;
+      color: #ccc;
+    }
+
+    #achievement-list {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    #achievement-list li {
+      background: #333;
+      margin: 5px 0;
+      padding: 8px;
+      border-radius: 5px;
+    }
+
+    #task-display {
+      margin-top: 15px;
+      font-weight: bold;
+      color: #00ffcc;
+    }
+  </style>
 </head>
 <body>
   <div id="start-container">
