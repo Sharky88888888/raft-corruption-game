@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>The Ugly Game: Corruption Hunt</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="start-container">
+    <h1>The Ugly Game: Corruption Hunt</h1>
+    <p>You are a journalist investigating corruption in the World Cup bidding process. Your choices will determine your fate.</p>
+    <button onclick="showChoiceScreen()">Start Investigation</button>
+    <div id="task-display"></div>
+  </div>
+
+  <div id="choice-container">
+    <h1>Choose Your First Move</h1>
+    <p>Where do you start your investigation?</p>
+    <button onclick="startGame('office')">Search your office for leaked documents</button>
+    <button onclick="startGame('whistleblower')">Meet a whistleblower in secret</button>
+    <button onclick="startGame('rival')">Investigate a rival journalist’s mysterious disappearance</button>
+  </div>
+
+  <div id="game-container">
+    <h1>The Ugly Game: Corruption Hunt</h1>
+    <p id="story"></p>
+    <div id="transition-screen" style="display: none;"><p>6 months later...</p></div>
+    <div id="choices"></div>
+  </div>
+
+  <div id="task-complete-container" style="display: none;">
+    <h1>Task Complete!</h1>
+    <p>You have completed your objective.</p>
+    <button onclick="restartWithNewTask()">Restart with New Task</button>
+  </div>
+
+  <div id="achievements-container">
+    <h2>Achievements</h2>
+    <ul id="achievement-list"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
